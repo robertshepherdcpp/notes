@@ -40,10 +40,16 @@ v += random(dre);
 }
 ```
 - `std::default_random_engine`
+`
+
       ¬ `std::random_device`
+      
             ¬ `std::default_random_engine dre{std::random_device{}()};`
+            
 - `std::uniform_int_distribution`
+
       ¬ initialize with a range of values: e.g. `1 - 99`
+      
              ¬ `std::uniform_int_distribution random{1,99};`
        
 **C++ Alignas specifier**
